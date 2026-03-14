@@ -232,7 +232,7 @@ export default function StoreProductsClient({ store, products, categories, total
               <div className="flex items-center justify-center gap-2 mt-10">
                 {[...Array(pages)].map((_, i) => (
                   <button key={i} onClick={() => updateFilter('page', String(i + 1))}
-                    style={{ w: '40px', h: '40px', padding: '0.5rem 0.875rem', borderRadius: '10px', border: '1.5px solid', borderColor: page === i + 1 ? '#0a0a0a' : '#e8e5e0', background: page === i + 1 ? '#0a0a0a' : 'white', color: page === i + 1 ? 'white' : '#9b9490', fontWeight: '600', cursor: 'pointer', fontFamily: 'inherit' }}>
+                    style={{ width: '40px', height: '40px', padding: '0.5rem 0.875rem', borderRadius: '10px', border: '1.5px solid', borderColor: page === i + 1 ? '#0a0a0a' : '#e8e5e0', background: page === i + 1 ? '#0a0a0a' : 'white', color: page === i + 1 ? 'white' : '#9b9490', fontWeight: '600', cursor: 'pointer', fontFamily: 'inherit' }}>
                     {(i + 1).toLocaleString(rtl ? 'fa-IR' : 'en')}
                   </button>
                 ))}
